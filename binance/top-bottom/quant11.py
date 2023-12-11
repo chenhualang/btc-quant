@@ -4,6 +4,8 @@ import math
 import time
 import hashlib
 import requests
+import logging
+
 
 # API信息
 api_key = '9010976e872dd63db2f45e3edac13f9c1c24593676d5b451f828b93229ad7a20'
@@ -11,6 +13,9 @@ secret_key = '34f417ee5c6d2d2c094689004b9768daaee476a7786138407a4cc8bb7e1cefd4'
 base_url = "https://testnet.binancefuture.com"
 headers = {"Content-Type": "application/json",
            "X-MBX-APIKEY": api_key}
+
+logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别
+
 
 # 获取服务器时间
 def get_server_time():
@@ -56,7 +61,7 @@ def place_order(symbol, side, quantity, price):
 
     response = requests.post(base_url + endpoint, params=params, headers=headers)
     response.raise_for_status()
-    print(f"place_order result response={response.json()}")
+    logging.info(f"place_order result response={response.json()}")
     return response.json()
 
 # 查询订单状态
@@ -198,7 +203,7 @@ if __name__ == '__main__':
     for symbol in symbols:
         try:
             symbol = 'BTCUSDT'  # 根据实际需要修改
-            print(f"Executing strategy for symbol: {symbol}")
+            logging.info(f"Executing strategy for symbol: {symbol}")
             while True:
                 # 获取最新K线数据
                 kline_data = get_kline_data(symbol)
@@ -217,7 +222,7 @@ if __name__ == '__main__':
                     # 查询账户余额
                     account_balance = get_account_balance()
                     usdt_balance = next(item['availableBalance'] for item in account_balance if item['asset'] == 'USDT')
-                    print("binance 合约账户余额为" + usdt_balance)
+                    logging.info("binance 合约账户余额为:{usdt_balance}" )
                     # 计算买入数量
                     buy_quantity = float(usdt_balance) * trade_quantity / market_price
                     buy_quantity = math.ceil(buy_quantity)
@@ -226,7 +231,7 @@ if __name__ == '__main__':
                     # 判断条件并执行交易
                     # if spike_flag and (high - close) >= (3 * (close - low)):
                     if symbol == 'BTCUSDT':
-                        print(f"放量长下影线买入 for symbol: {symbol}")
+                        logging.info(f"放量长下影线买入 for symbol: {symbol}")
                         # 符合条件，执行买入做多操作
 
                         if buy_quantity > 0:
@@ -237,30 +242,30 @@ if __name__ == '__main__':
 
                             response = place_order(symbol, 'BUY', buy_quantity, market_price)
                             if 'orderId' in response:
-                                print('买入订单已执行')
+                                logging.info('买入订单已执行')
                                 order_info = get_order_status(symbol, response['orderId'])
 
                                 while True:
                                     if order_info['status'] == 'FILLED':
-                                        print('委托订单已完全成交')
+                                        logging.info('委托订单已完全成交')
                                         break
                                     elif order_info['status'] == 'PARTIALLY_FILLED':
                                         executed_qty = float(order_info['executedQty'])
                                         if executed_qty >= buy_quantity / 2:
-                                            print('委托订单部分成交，等待执行止盈止损逻辑')
+                                            logging.info('委托订单部分成交，等待执行止盈止损逻辑')
                                             break
                                         else:
-                                            print('委托订单部分成交，撤销未成交部分')
+                                            logging.info('委托订单部分成交，撤销未成交部分')
                                             cancel_order(symbol, response['orderId'])
                                             response = place_order(symbol, 'BUY', buy_quantity - executed_qty,
                                                                    market_price)
                                             if 'orderId' in response:
-                                                print('重新下单买入未成交部分')
+                                                logging.info('重新下单买入未成交部分')
                                             else:
-                                                print('重新下单买入未成交部分失败')
+                                                logging.info('重新下单买入未成交部分失败')
                                             break
                                     else:
-                                        print('委托订单未成交')
+                                        logging.info('委托订单未成交')
                                         time.sleep(1)
                                         order_info = get_order_status(symbol, response['orderId'])
 
@@ -276,53 +281,53 @@ if __name__ == '__main__':
                                         # 达到目标价格，执行卖出操作
                                         response = place_order(symbol, 'SELL', buy_quantity, last_price)
                                         if 'orderId' in response:
-                                            print(f"止盈订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
+                                            logging.info(f"止盈订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
                                         else:
-                                            print('止盈订单执行失败')
+                                            logging.info('止盈订单执行失败')
 
                                         break
                                     elif last_price <= stop_loss_price:
                                         # 达到止损价格，执行止损操作
                                         response = place_order(symbol, 'SELL', buy_quantity, last_price)
                                         if 'orderId' in response:
-                                            print(f"止损订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
+                                            logging.info(f"止损订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
                                         else:
-                                            print('止损订单执行失败')
+                                            logging.info('止损订单执行失败')
                             else:
-                                print('买入订单执行失败')
+                                logging.info('买入订单执行失败')
                         else:
-                            print('账户余额不足，无法进行买入操作')
+                            logging.info('账户余额不足，无法进行买入操作')
                     elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
-                            print(f"放量长下影线买入 for symbol: {symbol}")
+                            logging.info(f"放量长下影线买入 for symbol: {symbol}")
                             # if symbol == 'BTCUSDT':
                             if buy_quantity > 0:
                                 # 符合条件，执行卖空操作
                                 response = place_order(symbol, 'SELL', buy_quantity, market_price)
                                 if 'orderId' in response:
-                                    print('卖空订单已执行')
+                                    logging.info('卖空订单已执行')
                                     order_info = get_order_status(symbol, response['orderId'])
 
                                     while True:
                                         if order_info['status'] == 'FILLED':
-                                            print('委托订单已完全成交')
+                                            logging.info('委托订单已完全成交')
                                             break
                                         elif order_info['status'] == 'PARTIALLY_FILLED':
                                             executed_qty = float(order_info['executedQty'])
                                             if executed_qty >= buy_quantity / 2:
-                                                print('委托订单部分成交，等待执行止盈止损逻辑')
+                                                logging.info('委托订单部分成交，等待执行止盈止损逻辑')
                                                 break
                                             else:
-                                                print('委托订单部分成交，撤销未成交部分')
+                                                logging.info('委托订单部分成交，撤销未成交部分')
                                                 cancel_order(symbol, response['orderId'])
                                                 response = place_order(symbol, 'SELL', buy_quantity - executed_qty,
                                                                        market_price)
                                                 if 'orderId' in response:
-                                                    print('重新下单卖空未成交部分')
+                                                    logging.info('重新下单卖空未成交部分')
                                                 else:
-                                                    print('重新下单卖空未成交部分失败')
+                                                    logging.info('重新下单卖空未成交部分失败')
                                                 break
                                         else:
-                                            print('委托订单未成交')
+                                            logging.info('委托订单未成交')
                                             time.sleep(1)
                                             order_info = get_order_status(symbol, response['orderId'])
 
@@ -336,29 +341,29 @@ if __name__ == '__main__':
                                             # 达到盈利目标价格，执行平仓操作
                                             response = place_order(symbol, 'BUY', buy_quantity, last_price)
                                             if 'orderId' in response:
-                                                print(
+                                                logging.info(
                                                     f"止盈订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
                                             else:
-                                                print('止盈订单执行失败')
+                                                logging.info('止盈订单执行失败')
 
                                             break
                                         elif last_price >= stop_loss_price:
                                             # 达到止损价格，执行止损操作
                                             response = place_order(symbol, 'BUY', buy_quantity, last_price)
                                             if 'orderId' in response:
-                                                print(
+                                                logging.info(
                                                     f"止损订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
                                             else:
-                                                print('止损订单执行失败')
+                                                logging.info('止损订单执行失败')
                                 else:
-                                    print('卖空订单执行失败')
+                                    logging.info('卖空订单执行失败')
                             else:
-                                print('账户余额不足，无法进行卖空操作')
+                                logging.info('账户余额不足，无法进行卖空操作')
                     else:
-                        print('不满足做多做空条件，继续等待')
+                        logging.info('不满足做多做空条件，继续等待')
         except Exception as e:
-            print(f"Error occurred for symbol: {symbol}")
-            print(f"Error message: {str(e)}")
+            logging.info(f"Error occurred for symbol: {symbol}")
+            logging.info(f"Error message: {str(e)}")
             continue
 
 # 下单结果： {'symbol': 'BTCUSDT', 'orderId': 841438, 'orderListId': -1, 'clientOrderId': 'hxNg58dRDHPeNsSW3mQD7U', 'transactTime': 1686315508366, 'price': '60000.00000000', 'origQty': '0.01000000', 'executedQty': '0.01000000', 'cummulativeQuoteQty': '266.59520000', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'workingTime': 1686315508366, 'fills': [{'price': '26659.52000000', 'qty': '0.01000000', 'commission': '0.00000000', 'commissionAsset': 'BTC', 'tradeId': 244649}], 'selfTradePreventionMode': 'NONE'}
