@@ -49,7 +49,6 @@ def place_order(symbol, side, quantity, price):
     }
 
     # 创建签名
-    # query_string = '&'.join([f'{k}={v}' for k, v in params.items()])
     signature_str = generate_signature(params)
 
     # 添加签名到参数中
@@ -59,6 +58,49 @@ def place_order(symbol, side, quantity, price):
     response.raise_for_status()
     print(f"place_order result response={response.json()}")
     return response.json()
+
+# 查询订单状态
+def get_order_status(symbol, order_id):
+    endpoint = '/fapi/v1/order'
+    timestamp = int(time.time() * 1000)
+
+    params = {
+        'symbol': symbol,
+        'orderId': order_id,
+        'timestamp': timestamp,
+    }
+
+    # 创建签名
+    signature_str = generate_signature(params)
+
+    # 添加签名和API密钥到参数中
+    params['signature'] = signature_str
+    params['recvWindow'] = 5000
+    params['apiKey'] = api_key
+
+    response = requests.get(base_url + endpoint, params=params)
+    response.raise_for_status()
+    return response.json()
+
+def cancel_order(symbol, order_id):
+    endpoint = f'/fapi/v1/order'
+    timestamp = int(time.time() * 1000)
+
+    params = {
+        'symbol': symbol,
+        'orderId': order_id,
+        'timestamp': timestamp
+    }
+
+    # 创建签名
+    signature_str = generate_signature(params)
+
+    params['signature'] = signature_str
+
+    response = requests.delete(base_url + endpoint, params=params)
+    response.raise_for_status()
+    return response.json()
+
 
 # 获取账户余额
 def get_account_balance():
@@ -72,10 +114,6 @@ def get_account_balance():
     }
 
     request_data['signature'] = generate_signature(request_data)
-
-    # headers = {
-    #     'X-MBX-APIKEY': api_key
-    # }
 
     response = requests.get(base_url + endpoint, params=request_data, headers=headers)
     response_json = response.json()
@@ -150,116 +188,174 @@ def get_market_price(symbol):
 
 # 主函数
 if __name__ == '__main__':
-    # symbol = 'BTCUSDT'  # 根据实际需要修改
     trade_quantity = 0.3  # 七成仓位
-    profit_threshold = 0.1  # 盈利10%
-    stop_loss_threshold = 0.3  # 止损30%
+    profit_threshold = 0.02  # 盈利10%
+    stop_loss_threshold = 0.02  # 止损30%
     # 获取24h成交量最高的10个币
     symbols = get_top_10_volume_symbols()
 
     # 遍历每个币并执行策略
     for symbol in symbols:
         try:
+            symbol = 'BTCUSDT'  # 根据实际需要修改
             print(f"Executing strategy for symbol: {symbol}")
-            # 获取最新K线数据
-            kline_data = get_kline_data(symbol)
-            if len(kline_data) > 0:
-                latest_kline = kline_data[-1]
-                open_price = float(latest_kline[1])
-                high = float(latest_kline[2])
-                low = float(latest_kline[3])
-                volume = float(latest_kline[5])
-                close = float(latest_kline[4])
+            while True:
+                # 获取最新K线数据
+                kline_data = get_kline_data(symbol)
+                if len(kline_data) > 0:
+                    latest_kline = kline_data[-1]
+                    open_price = float(latest_kline[1])
+                    high = float(latest_kline[2])
+                    low = float(latest_kline[3])
+                    volume = float(latest_kline[5])
+                    close = float(latest_kline[4])
 
-                # 计算卖出目标价格
-                target_price = close * (1 + profit_threshold)
-                stop_loss_price = close * (1 - stop_loss_threshold)
 
-                spike_flag = is_volume_spike(symbol)
+                    spike_flag = is_volume_spike(symbol)
 
-                market_price = get_market_price(symbol)
+                    market_price = get_market_price(symbol)
+                    # 查询账户余额
+                    account_balance = get_account_balance()
+                    usdt_balance = next(item['availableBalance'] for item in account_balance if item['asset'] == 'USDT')
+                    print("binance 合约账户余额为" + usdt_balance)
+                    # 计算买入数量
+                    buy_quantity = float(usdt_balance) * trade_quantity / market_price
+                    buy_quantity = math.ceil(buy_quantity)
 
-                usdt_balance = next(item['availableBalance'] for item in account_balance if item['asset'] == 'USDT')
-                print("binance 合约账户余额为" + usdt_balance)
-                # 计算买入数量
-                buy_quantity = float(usdt_balance) * trade_quantity / market_price
-                buy_quantity = math.ceil(buy_quantity)
 
-                # 判断条件并执行交易
-                if spike_flag and (high - close) >= (3 * (close - low)):
-                # if symbol == '1000PEPEUSDT':
-                    print(f"放量长下影线买入 for symbol: {symbol}")
-                    # 符合条件，执行买入做多操作
-
-                    if buy_quantity > 0:
-                        response = place_order(symbol, 'BUY', buy_quantity, market_price)
-                        if 'orderId' in response:
-                            print('买入订单已执行')
-
-                            # 监控价格并执行卖出操作
-                            while True:
-                                time.sleep(1)
-                                # 获取最新价格
-                                ticker_data = get_ticker(symbol)
-                                last_price = float(ticker_data['price'])
-                                if last_price >= target_price:
-                                    # 达到目标价格，执行卖出操作
-                                    response = place_order(symbol, 'SELL', buy_quantity, last_price)
-                                    if 'orderId' in response:
-                                        print(f"止盈订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
-                                    else:
-                                        print('止盈订单执行失败')
-
-                                    break
-                                elif last_price <= stop_loss_price:
-                                    # 达到止损价格，执行止损操作
-                                    response = place_order(symbol, 'SELL', buy_quantity, last_price)
-                                    if 'orderId' in response:
-                                        print(f"止损订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
-                                    else:
-                                        print('止损订单执行失败')
-
-                            else:
-                                print('买入订单执行失败')
-                        else:
-                            print('账户余额不足，无法进行买入操作')
-                    else:
-                        print('获取账户余额失败')
-                else:
-                    if spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
+                    # 判断条件并执行交易
+                    # if spike_flag and (high - close) >= (3 * (close - low)):
+                    if symbol == 'BTCUSDT':
                         print(f"放量长下影线买入 for symbol: {symbol}")
-                    # if symbol == 'BTCUSDT':
-                        if buy_quantity > 0:
-                            # 符合放量长上影线条件，执行做空卖出操作
-                            response = place_order(symbol, 'SELL', buy_quantity, market_price)
-                            if 'orderId' in response:
-                                print('Short sell order executed')
-                                print(f"Short sold {trade_quantity * 100}% of {symbol} at {close}")
+                        # 符合条件，执行买入做多操作
 
-                                # 监控价格并执行平仓操作
+                        if buy_quantity > 0:
+
+                            # 计算卖出目标价格
+                            target_price = market_price * (1 + profit_threshold)
+                            stop_loss_price = market_price * (1 - stop_loss_threshold)
+
+                            response = place_order(symbol, 'BUY', buy_quantity, market_price)
+                            if 'orderId' in response:
+                                print('买入订单已执行')
+                                order_info = get_order_status(symbol, response['orderId'])
+
+                                while True:
+                                    if order_info['status'] == 'FILLED':
+                                        print('委托订单已完全成交')
+                                        break
+                                    elif order_info['status'] == 'PARTIALLY_FILLED':
+                                        executed_qty = float(order_info['executedQty'])
+                                        if executed_qty >= buy_quantity / 2:
+                                            print('委托订单部分成交，等待执行止盈止损逻辑')
+                                            break
+                                        else:
+                                            print('委托订单部分成交，撤销未成交部分')
+                                            cancel_order(symbol, response['orderId'])
+                                            response = place_order(symbol, 'BUY', buy_quantity - executed_qty,
+                                                                   market_price)
+                                            if 'orderId' in response:
+                                                print('重新下单买入未成交部分')
+                                            else:
+                                                print('重新下单买入未成交部分失败')
+                                            break
+                                    else:
+                                        print('委托订单未成交')
+                                        time.sleep(1)
+                                        order_info = get_order_status(symbol, response['orderId'])
+
+
+                                # 监控价格并执行卖出操作
                                 while True:
                                     time.sleep(1)
                                     # 获取最新价格
                                     ticker_data = get_ticker(symbol)
                                     last_price = float(ticker_data['price'])
-                                    if last_price <= target_price:
-                                        # 达到盈利目标价格，执行平仓操作
-                                        response = place_order(symbol, 'BUY', buy_quantity, market_price)
+
+                                    if last_price >= target_price:
+                                        # 达到目标价格，执行卖出操作
+                                        response = place_order(symbol, 'SELL', buy_quantity, last_price)
                                         if 'orderId' in response:
                                             print(f"止盈订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
                                         else:
                                             print('止盈订单执行失败')
 
                                         break
-                                    elif last_price >= stop_loss_price:
+                                    elif last_price <= stop_loss_price:
                                         # 达到止损价格，执行止损操作
-                                        response = place_order(symbol, 'BUY', buy_quantity, market_price)
+                                        response = place_order(symbol, 'SELL', buy_quantity, last_price)
                                         if 'orderId' in response:
                                             print(f"止损订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
                                         else:
                                             print('止损订单执行失败')
-            else:
-                print(f"No K-line data available for symbol: {symbol}")
+                            else:
+                                print('买入订单执行失败')
+                        else:
+                            print('账户余额不足，无法进行买入操作')
+                    elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
+                            print(f"放量长下影线买入 for symbol: {symbol}")
+                            # if symbol == 'BTCUSDT':
+                            if buy_quantity > 0:
+                                # 符合条件，执行卖空操作
+                                response = place_order(symbol, 'SELL', buy_quantity, market_price)
+                                if 'orderId' in response:
+                                    print('卖空订单已执行')
+                                    order_info = get_order_status(symbol, response['orderId'])
+
+                                    while True:
+                                        if order_info['status'] == 'FILLED':
+                                            print('委托订单已完全成交')
+                                            break
+                                        elif order_info['status'] == 'PARTIALLY_FILLED':
+                                            executed_qty = float(order_info['executedQty'])
+                                            if executed_qty >= buy_quantity / 2:
+                                                print('委托订单部分成交，等待执行止盈止损逻辑')
+                                                break
+                                            else:
+                                                print('委托订单部分成交，撤销未成交部分')
+                                                cancel_order(symbol, response['orderId'])
+                                                response = place_order(symbol, 'SELL', buy_quantity - executed_qty,
+                                                                       market_price)
+                                                if 'orderId' in response:
+                                                    print('重新下单卖空未成交部分')
+                                                else:
+                                                    print('重新下单卖空未成交部分失败')
+                                                break
+                                        else:
+                                            print('委托订单未成交')
+                                            time.sleep(1)
+                                            order_info = get_order_status(symbol, response['orderId'])
+
+                                    # 监控价格并执行平仓操作
+                                    while True:
+                                        time.sleep(1)
+                                        # 获取最新价格
+                                        ticker_data = get_ticker(symbol)
+                                        last_price = float(ticker_data['price'])
+                                        if last_price <= target_price:
+                                            # 达到盈利目标价格，执行平仓操作
+                                            response = place_order(symbol, 'BUY', buy_quantity, last_price)
+                                            if 'orderId' in response:
+                                                print(
+                                                    f"止盈订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
+                                            else:
+                                                print('止盈订单执行失败')
+
+                                            break
+                                        elif last_price >= stop_loss_price:
+                                            # 达到止损价格，执行止损操作
+                                            response = place_order(symbol, 'BUY', buy_quantity, last_price)
+                                            if 'orderId' in response:
+                                                print(
+                                                    f"止损订单已执行，Closed {symbol} at {last_price} with profit {profit_threshold * 100}%")
+                                            else:
+                                                print('止损订单执行失败')
+                                else:
+                                    print('卖空订单执行失败')
+                            else:
+                                print('账户余额不足，无法进行卖空操作')
+                    else:
+                        print('不满足做多做空条件，继续等待')
         except Exception as e:
             print(f"Error occurred for symbol: {symbol}")
             print(f"Error message: {str(e)}")
