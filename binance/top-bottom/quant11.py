@@ -6,6 +6,7 @@ import hashlib
 import requests
 import logging
 
+# -*- coding: utf-8 -*-
 
 # API信息
 api_key = '9010976e872dd63db2f45e3edac13f9c1c24593676d5b451f828b93229ad7a20'
