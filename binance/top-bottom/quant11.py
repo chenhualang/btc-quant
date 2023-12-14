@@ -203,7 +203,7 @@ if __name__ == '__main__':
     # 遍历每个币并执行策略
     for symbol in symbols:
         try:
-            symbol = 'BTCUSDT'  # 根据实际需要修改
+            # symbol = 'BTCUSDT'  # 根据实际需要修改
             logging.info(f"Executing strategy for symbol: {symbol}")
             while True:
                 # 获取最新K线数据
@@ -223,15 +223,15 @@ if __name__ == '__main__':
                     # 查询账户余额
                     account_balance = get_account_balance()
                     usdt_balance = next(item['availableBalance'] for item in account_balance if item['asset'] == 'USDT')
-                    logging.info("binance 合约账户余额为:{usdt_balance}" )
+                    logging.info(f"binance 合约账户余额为:{usdt_balance}" )
                     # 计算买入数量
                     buy_quantity = float(usdt_balance) * trade_quantity / market_price
                     buy_quantity = math.ceil(buy_quantity)
 
 
                     # 判断条件并执行交易
-                    # if spike_flag and (high - close) >= (3 * (close - low)):
-                    if symbol == 'BTCUSDT':
+                    if spike_flag and (high - close) >= (3 * (close - low)):
+                    # if symbol == 'BTCUSDT':
                         logging.info(f"放量长下影线买入 for symbol: {symbol}")
                         # 符合条件，执行买入做多操作
 
@@ -299,7 +299,7 @@ if __name__ == '__main__':
                         else:
                             logging.info('账户余额不足，无法进行买入操作')
                     elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
-                            logging.info(f"放量长下影线买入 for symbol: {symbol}")
+                            logging.info(f"放量长上影线卖出 for symbol: {symbol}")
                             # if symbol == 'BTCUSDT':
                             if buy_quantity > 0:
                                 # 符合条件，执行卖空操作
