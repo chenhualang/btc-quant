@@ -121,47 +121,50 @@ def send_email_notification(action, symbol):
     email_sender.send_email(receiver_email, subject, body)
 
 # 主函数
+import concurrent.futures
+
 if __name__ == '__main__':
     trade_quantity = 0.3  # 三成仓位
     profit_threshold = 0.02  # 盈利2%
     stop_loss_threshold = 0.02  # 止损2%
+
     # 获取24h成交量最高的20个币
     symbols = get_top_20_volume_symbols()
     logging.info(f"24h成交量最高的20个币: {symbols}")
 
-    # 遍历每个币并执行策略
-    for symbol in symbols:
+
+    def process_symbol(symbol):
         try:
-            # symbol = 'BTCUSDT'  # 根据实际需要修改
             logging.info(f"Executing strategy for symbol: {symbol}")
-            while True:
-                # 获取最新K线数据
-                kline_data = get_kline_data(symbol)
-                if len(kline_data) > 0:
-                    latest_kline = kline_data[-1]
-                    open_price = float(latest_kline[1])
-                    high = float(latest_kline[2])
-                    low = float(latest_kline[3])
-                    volume = float(latest_kline[5])
-                    close = float(latest_kline[4])
+            # 获取最新K线数据
+            kline_data = get_kline_data(symbol)
+            if len(kline_data) > 0:
+                latest_kline = kline_data[-1]
+                open_price = float(latest_kline[1])
+                high = float(latest_kline[2])
+                low = float(latest_kline[3])
+                volume = float(latest_kline[5])
+                close = float(latest_kline[4])
 
-                    spike_flag = is_volume_spike(symbol)
+                spike_flag = is_volume_spike(symbol)
 
-                    # 判断条件并执行交易
-                    if spike_flag and (high - close) >= (3 * (close - low)):
-                        logging.info(f"放量长下影线买入 for symbol: {symbol}")
-                        send_email_notification("放量长下影线买入", symbol)
-
-                    elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
-                        logging.info(f"放量长上影线卖出 for symbol: {symbol}")
-                        send_email_notification("放量长上影线卖出 ", symbol)
-                    else:
-                     logging.info('不满足做多做空条件，继续等待')
-
+                # 判断条件并执行交易
+                if spike_flag and (high - close) >= (3 * (close - low)):
+                    logging.info(f"放量长下影线买入 for symbol: {symbol}")
+                    send_email_notification("放量长下影线买入", symbol)
+                elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
+                    logging.info(f"放量长上影线卖出 for symbol: {symbol}")
+                    send_email_notification("放量长上影线卖出", symbol)
+                else:
+                    logging.info('不满足做多做空条件，继续等待')
         except Exception as e:
             logging.info(f"Error occurred for symbol: {symbol}")
             logging.info(f"Error message: {str(e)}")
-            continue
+
+
+    # 使用多线程处理每个币种
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        executor.map(process_symbol, symbols)
 
 # 下单结果： {'symbol': 'BTCUSDT', 'orderId': 841438, 'orderListId': -1, 'clientOrderId': 'hxNg58dRDHPeNsSW3mQD7U', 'transactTime': 1686315508366, 'price': '60000.00000000', 'origQty': '0.01000000', 'executedQty': '0.01000000', 'cummulativeQuoteQty': '266.59520000', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'workingTime': 1686315508366, 'fills': [{'price': '26659.52000000', 'qty': '0.01000000', 'commission': '0.00000000', 'commissionAsset': 'BTC', 'tradeId': 244649}], 'selfTradePreventionMode': 'NONE'}
 # BTC余额：1.01
