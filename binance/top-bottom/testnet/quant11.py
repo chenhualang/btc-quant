@@ -194,9 +194,9 @@ def get_market_price(symbol):
 
 # 主函数
 if __name__ == '__main__':
-    trade_quantity = 0.3  # 七成仓位
-    profit_threshold = 0.02  # 盈利10%
-    stop_loss_threshold = 0.02  # 止损30%
+    trade_quantity = 0.3  # 三成仓位
+    profit_threshold = 0.02  # 盈利2%
+    stop_loss_threshold = 0.02  # 止损2%
     # 获取24h成交量最高的10个币
     symbols = get_top_10_volume_symbols()
 
@@ -370,4 +370,9 @@ if __name__ == '__main__':
 # 下单结果： {'symbol': 'BTCUSDT', 'orderId': 841438, 'orderListId': -1, 'clientOrderId': 'hxNg58dRDHPeNsSW3mQD7U', 'transactTime': 1686315508366, 'price': '60000.00000000', 'origQty': '0.01000000', 'executedQty': '0.01000000', 'cummulativeQuoteQty': '266.59520000', 'status': 'FILLED', 'timeInForce': 'GTC', 'type': 'LIMIT', 'side': 'BUY', 'workingTime': 1686315508366, 'fills': [{'price': '26659.52000000', 'qty': '0.01000000', 'commission': '0.00000000', 'commissionAsset': 'BTC', 'tradeId': 244649}], 'selfTradePreventionMode': 'NONE'}
 # BTC余额：1.01
 #
-# 该策略实现在某货币在放量长下影线的时候七成仓位买入，在盈利10%的时候全部卖出
+# 该策略实现在某货币在放量长下影线的时候三成仓位买入，在盈利2%的时候全部卖出，亏损2%的时候全部平仓。
+#  trade_quantity = 0.3  # 三成仓位
+#     profit_threshold = 0.02  # 盈利2%
+#     stop_loss_threshold = 0.02  # 止损2%
+#     # 获取24h成交量最高的10个币
+#     symbols = get_top_10_volume_symbols()
