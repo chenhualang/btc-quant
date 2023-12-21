@@ -60,11 +60,11 @@ def is_volume_spike(symbol):
         average_volume = sum(float(kline[5]) for kline in kline_data) / len(kline_data)
 
         # 获取最新一次15分钟的K线数据
-        current_kline = get_kline_data(symbol, '15m')[-1]
+        current_kline = get_kline_data(symbol, '5m')[-1]
         current_volume = float(current_kline[5])
 
         # 判断是否放量
-        if current_volume >= 3 * average_volume:
+        if current_volume >= 2 * average_volume:
             return True
 
     return False
