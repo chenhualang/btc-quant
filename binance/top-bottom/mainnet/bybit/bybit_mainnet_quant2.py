@@ -12,7 +12,7 @@ base_url = "https://api.bybit.com"
 headers = {"Content-Type": "application/json",
            "X-MBX-APIKEY": api_key}
 
-logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别
+# logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别
 
 
 # 查询K线数据
@@ -32,7 +32,7 @@ def get_kline_data(symbol, interval, limit=1):
 
 def is_volume_spike(symbol):
     # 获取最近6小时的K线数据
-    kline_data = get_kline_data(symbol, '6h')
+    kline_data = get_kline_data(symbol, 5, 72)
     if len(kline_data) > 0:
         # 计算最近6小时内平均成交量
         average_volume = sum(float(kline['volume']) for kline in kline_data) / len(kline_data)
@@ -55,7 +55,7 @@ def get_top_20_volume_symbols():
     response.raise_for_status()
     tickers = response.json()['result']
 
-    print(response.json())
+    # print(response.json())
 
     # 根据交易量进行排序
     tickers.sort(key=lambda x: float(x['turnover_24h']), reverse=True)
@@ -63,15 +63,6 @@ def get_top_20_volume_symbols():
     # 提取前20个币的交易对
     top_symbols = [ticker['symbol'] for ticker in tickers[:20]]
     return top_symbols
-
-
-# 获取交易对的最新价格
-def get_ticker(symbol):
-    endpoint = '/v2/public/ticker'
-    params = {'symbol': symbol}
-    response = requests.get(f"https://api.bybit.com{endpoint}", params=params)
-    response.raise_for_status()
-    return response.json()['result'][0]
 
 
 def send_email_notification(action, symbol):

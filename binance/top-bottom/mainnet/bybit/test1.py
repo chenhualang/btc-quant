@@ -1,6 +1,7 @@
+import time
+import random
 from pybit.unified_trading import HTTP
-from ..notice.email1 import EmailSender
-import concurrent.futures
+from notice.email1 import EmailSender
 import logging
 
 session = HTTP(
@@ -10,18 +11,19 @@ session = HTTP(
 )
 
 # logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
+logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
 
 
 def is_volume_spike(symbol):
     # 获取最近6小时的K线数据
-    kline_data = session.get_kline(symbol=symbol,interval=5,limit=72)
+    kline_data = session.get_kline(symbol=symbol,interval=5,limit=72)["result"]["list"]
     if len(kline_data) > 0:
         # 计算最近6小时内平均成交量
-        average_volume = sum(float(kline['volume']) for kline in kline_data) / len(kline_data)
+        average_volume = sum(float(kline[5]) for kline in kline_data) / len(kline_data)
 
         # 获取最新一次15分钟的K线数据
-        current_kline = session.get_kline(symbol, '5', limit=1)[-1]
-        current_volume = float(current_kline['volume'])
+        current_kline = session.get_kline(symbol=symbol, interval=5, limit=1)["result"]["list"][0]
+        current_volume = float(current_kline[5])
 
         # 判断是否放量
         if current_volume >= 2 * average_volume:
@@ -54,20 +56,8 @@ def send_email_notification(action, symbol):
     # 发送邮件
     email_sender.send_email(receiver_email, subject, body)
 
-
-
-# 主函数
-if __name__ == '__main__':
-    trade_quantity = 0.3  # 三成仓位
-    profit_threshold = 0.02  # 盈利2%
-    stop_loss_threshold = 0.02  # 止损2%
-
-    # 获取24h成交量最高的20个币
-    symbols = get_top_20_volume_symbols()
-    logging.info(f"24h成交量最高的20个币: {symbols}")
-
-
-    def process_symbol(symbol):
+def process_symbols(symbols):
+    for symbol in symbols:
         try:
             logging.info(f"Executing strategy for symbol: {symbol}")
             # 获取最新K线数据
@@ -85,17 +75,30 @@ if __name__ == '__main__':
                 # 判断条件并执行交易
                 if spike_flag and (high - close) >= (3 * (close - low)):
                     logging.info(f"放量长下影线买入 for symbol: {symbol}")
-                    send_email_notification("放量长下影线买入", symbol)
+                    # 执行买入逻辑，可以调用相关函数
                 elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
                     logging.info(f"放量长上影线卖出 for symbol: {symbol}")
-                    send_email_notification("放量长上影线卖出", symbol)
+                    # 执行卖出逻辑，可以调用相关函数
                 else:
-                    logging.info('不满足做多做空条件，继续等待')
+                    logging.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
         except Exception as e:
             logging.info(f"Error occurred for symbol: {symbol}")
             logging.info(f"Error message: {str(e)}")
 
 
-    # 使用多线程处理每个币种
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.map(process_symbol, symbols)
+def main():
+    # 获取24h成交量最高的20个币
+    symbols = get_top_20_volume_symbols()
+    # symbols = ['BTCUSDT', 'ETHUSDT', 'XRPUSDT', 'LTCUSDT']  # 你需要监控的币种列表
+    logging.info(f"24h成交量最高的20个币: {symbols}")
+
+    while True:
+        # 执行监控任务
+        process_symbols(symbols)
+        logging.info('扫描完一次20个币对，随机休眠一段时间后继续扫描')
+        # 休眠一段时间，避免频繁请求
+        time.sleep(random.uniform(60, 120))  # 随机休眠60-120秒
+
+
+if __name__ == '__main__':
+    main()
