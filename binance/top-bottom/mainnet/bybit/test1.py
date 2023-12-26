@@ -73,11 +73,11 @@ def process_symbols(symbols):
                 spike_flag = is_volume_spike(symbol)
 
                 # 判断条件并执行交易
-                if spike_flag and (high - close) >= (3 * (close - low)):
-                    logging.info(f"放量长下影线买入 for symbol: {symbol}")
+                if spike_flag and (high - close) >= (1.5 * abs(close - open_price)):
+                    logging.info(f"放量长上影线买入 for symbol: {symbol}")
                     # 执行买入逻辑，可以调用相关函数
-                elif spike_flag and close > open_price and (high - close) >= (3 * (close - low)):
-                    logging.info(f"放量长上影线卖出 for symbol: {symbol}")
+                elif spike_flag and (close - low) >= (1.5 * abs(close - open_price)):
+                    logging.info(f"放量长下影线卖出 for symbol: {symbol}")
                     # 执行卖出逻辑，可以调用相关函数
                 else:
                     logging.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
