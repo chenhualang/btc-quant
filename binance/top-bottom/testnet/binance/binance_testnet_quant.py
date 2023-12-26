@@ -5,6 +5,8 @@ import time
 import hashlib
 import requests
 import logging
+import ssl
+ssl._DEFAULT_CIPHERS = 'HIGH:!DH:!aNULL'
 
 # -*- coding: utf-8 -*-
 

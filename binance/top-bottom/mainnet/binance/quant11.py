@@ -51,7 +51,8 @@ def place_order(symbol, side, quantity, price):
         'timeInForce': 'GTC',
         'type': 'LIMIT',
         'timestamp': timestamp,
-        'recvWindow': 5000
+        'recvWindow': 5000,
+        'leverage': 3  # 添加杠杆参数
     }
 
     # 创建签名

@@ -1,0 +1,372 @@
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:Error occurred for symbol: BTCUSDT
+INFO:root:Error message: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/klines?symbol=BTCUSDT&interval=6h&limit=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1031597f0>: Failed to resolve 'fapi.binance.com' ([Errno 8] nodename nor servname provided, or not known)"))
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Error occurred for symbol: SEIUSDT
+INFO:root:Error message: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/klines?symbol=SEIUSDT&interval=15m&limit=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1057d12e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'OPUSDT', 'MATICUSDT', 'XRPUSDT', 'SEIUSDT']
+INFO:root:Executing strategy for symbol: BTCUSDT
+INFO:root:Executing strategy for symbol: ETHUSDT
+INFO:root:Executing strategy for symbol: SOLUSDT
+INFO:root:Executing strategy for symbol: AVAXUSDT
+INFO:root:Executing strategy for symbol: NEARUSDT
+INFO:root:Executing strategy for symbol: BAKEUSDT
+INFO:root:Executing strategy for symbol: DOTUSDT
+INFO:root:Executing strategy for symbol: TRBUSDT
+INFO:root:Executing strategy for symbol: DOGEUSDT
+INFO:root:Executing strategy for symbol: ORDIUSDT
+INFO:root:Executing strategy for symbol: ACEUSDT
+INFO:root:Executing strategy for symbol: ADAUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: 1000BONKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: BNBUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: INJUSDT
+INFO:root:Executing strategy for symbol: LINKUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: OPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: MATICUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: XRPUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:Executing strategy for symbol: SEIUSDT
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:不满足做多做空条件，继续等待
+INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'OPUSDT', 'MATICUSDT', 'XRPUSDT', 'SEIUSDT']
