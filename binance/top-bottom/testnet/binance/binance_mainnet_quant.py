@@ -14,6 +14,18 @@ base_url = "https://fapi.binance.com"
 headers = {"Content-Type": "application/json",
            "X-MBX-APIKEY": api_key}
 
+# 创建logger和handler
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+handler = logging.FileHandler('binance_quant_mainnet.log')
+handler.setLevel(logging.INFO)
+
+# 创建日期时间格式
+datefmt = '%Y-%m-%d %H:%M:%S'
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt=datefmt)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
 # logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
 logging.basicConfig(filename='binance_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
 
