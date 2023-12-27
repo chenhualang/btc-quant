@@ -3,6 +3,7 @@ import random
 from pybit.unified_trading import HTTP
 from notice.email1 import EmailSender
 import logging
+import datetime
 
 session = HTTP(
     testnet=False,
@@ -10,20 +11,23 @@ session = HTTP(
     api_secret="2JDubktuzxTvzkqE0AozIRcL5SByUrotzcCx",
 )
 
-# 创建logger和handler
+# 配置日志记录器
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
-handler = logging.FileHandler('bybit_quant_mainnet.log')
-handler.setLevel(logging.INFO)
 
-# 创建日期时间格式
-datefmt = '%Y-%m-%d %H:%M:%S'
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s', datefmt=datefmt)
-handler.setFormatter(formatter)
-logger.addHandler(handler)
+# 创建一个文件处理器，将日志写入文件
+file_handler = logging.FileHandler('bybit_quant_mainnet.log')
+file_handler.setLevel(logging.INFO)
+
+# 创建一个日志格式器，设置日志的输出格式
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+
+# 将文件处理器添加到日志记录器中
+logger.addHandler(file_handler)
 
 # logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
-logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
+# logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
 
 
 def is_volume_spike(symbol):
@@ -71,7 +75,7 @@ def send_email_notification(action, symbol):
 def process_symbols(symbols):
     for symbol in symbols:
         try:
-            logging.info(f"Executing strategy for symbol: {symbol}")
+            logger.info(f"Executing strategy for symbol: {symbol}")
             # 获取最新K线数据
             kline_data = session.get_kline(category="linear", symbol=symbol, interval=5)["result"]["list"]
             if len(kline_data) > 0:
@@ -86,28 +90,28 @@ def process_symbols(symbols):
 
                 # 判断条件并执行交易
                 if spike_flag and (high - close) >= (1.5 * abs(close - open_price)):
-                    logging.info(f"放量长上影线买入 for symbol: {symbol}")
+                    logger.info(f"放量长上影线买入 for symbol: {symbol}")
                     # 执行买入逻辑，可以调用相关函数
                 elif spike_flag and (close - low) >= (1.5 * abs(close - open_price)):
-                    logging.info(f"放量长下影线卖出 for symbol: {symbol}")
+                    logger.info(f"放量长下影线卖出 for symbol: {symbol}")
                     # 执行卖出逻辑，可以调用相关函数
                 else:
-                    logging.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
+                    logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
         except Exception as e:
-            logging.info(f"Error occurred for symbol: {symbol}")
-            logging.info(f"Error message: {str(e)}")
+            logger.info(f"Error occurred for symbol: {symbol}")
+            logger.info(f"Error message: {str(e)}")
 
 
 def main():
     # 获取24h成交量最高的20个币
     symbols = get_top_20_volume_symbols()
     # symbols = ['BTCUSDT', 'ETHUSDT', 'XRPUSDT', 'LTCUSDT']  # 你需要监控的币种列表
-    logging.info(f"24h成交量最高的20个币: {symbols}")
+    logger.info(f"24h成交量最高的20个币: {symbols}")
 
     while True:
         # 执行监控任务
         process_symbols(symbols)
-        logging.info('扫描完一次20个币对，随机休眠一段时间后继续扫描')
+        logger.info('扫描完一次20个币对，随机休眠一段时间后继续扫描')
         # 休眠一段时间，避免频繁请求
         time.sleep(random.uniform(60, 120))  # 随机休眠60-120秒
 

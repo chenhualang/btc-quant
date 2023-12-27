@@ -1,372 +1,616 @@
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:Error occurred for symbol: BTCUSDT
-INFO:root:Error message: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/klines?symbol=BTCUSDT&interval=6h&limit=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1031597f0>: Failed to resolve 'fapi.binance.com' ([Errno 8] nodename nor servname provided, or not known)"))
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Error occurred for symbol: SEIUSDT
-INFO:root:Error message: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /fapi/v1/klines?symbol=SEIUSDT&interval=15m&limit=1 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1057d12e0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'MATICUSDT', 'OPUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'OPUSDT', 'MATICUSDT', 'XRPUSDT', 'SEIUSDT']
-INFO:root:Executing strategy for symbol: BTCUSDT
-INFO:root:Executing strategy for symbol: ETHUSDT
-INFO:root:Executing strategy for symbol: SOLUSDT
-INFO:root:Executing strategy for symbol: AVAXUSDT
-INFO:root:Executing strategy for symbol: NEARUSDT
-INFO:root:Executing strategy for symbol: BAKEUSDT
-INFO:root:Executing strategy for symbol: DOTUSDT
-INFO:root:Executing strategy for symbol: TRBUSDT
-INFO:root:Executing strategy for symbol: DOGEUSDT
-INFO:root:Executing strategy for symbol: ORDIUSDT
-INFO:root:Executing strategy for symbol: ACEUSDT
-INFO:root:Executing strategy for symbol: ADAUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: 1000BONKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: BNBUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: INJUSDT
-INFO:root:Executing strategy for symbol: LINKUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: OPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: MATICUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: XRPUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:Executing strategy for symbol: SEIUSDT
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:不满足做多做空条件，继续等待
-INFO:root:24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'AVAXUSDT', 'NEARUSDT', 'BAKEUSDT', 'DOTUSDT', 'TRBUSDT', 'DOGEUSDT', 'ORDIUSDT', 'ACEUSDT', 'ADAUSDT', '1000BONKUSDT', 'BNBUSDT', 'INJUSDT', 'LINKUSDT', 'OPUSDT', 'MATICUSDT', 'XRPUSDT', 'SEIUSDT']
+2023-12-27 19:03:24,273 - __main__ - INFO - 24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'MATICUSDT', 'ORDIUSDT', 'BNBUSDT', 'BAKEUSDT', 'SEIUSDT', 'XRPUSDT', 'AVAXUSDT', 'PERPUSDT', 'LEVERUSDT', 'OPUSDT', 'ADAUSDT', 'NEARUSDT', 'MINAUSDT', 'SUIUSDT', '1000SATSUSDT', 'DOGEUSDT', 'DYDXUSDT']
+2023-12-27 19:03:24,274 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:03:24,275 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:03:24,276 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:03:24,277 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:03:24,278 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:03:24,279 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:03:24,279 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:03:24,279 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:03:24,280 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:03:24,282 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:03:24,283 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:03:24,284 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:03:25,053 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,053 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:03:25,061 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,062 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,063 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,063 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,063 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:03:25,064 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,064 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:03:25,065 - __main__ - INFO - 放量长下影线买入 for symbol: SOLUSDT
+2023-12-27 19:03:25,065 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,066 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,066 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:03:25,066 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:03:25,066 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:03:25,067 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:03:25,067 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:03:25,069 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,079 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,079 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,811 - __main__ - INFO - 放量长下影线买入 for symbol: OPUSDT
+2023-12-27 19:03:25,836 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,844 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,850 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,854 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,856 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,858 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:25,862 - __main__ - INFO - 不满足做多做空条件，继续等待
+2023-12-27 19:03:32,935 - __main__ - INFO - 24h成交量最高的20个币: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT', 'MATICUSDT', 'ORDIUSDT', 'BNBUSDT', 'BAKEUSDT', 'SEIUSDT', 'XRPUSDT', 'AVAXUSDT', 'PERPUSDT', 'LEVERUSDT', 'OPUSDT', 'ADAUSDT', 'NEARUSDT', 'MINAUSDT', 'SUIUSDT', '1000SATSUSDT', 'DOGEUSDT', 'DYDXUSDT']
+2023-12-27 19:03:32,936 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:03:33,691 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:03:33,691 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:03:34,465 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:03:34,465 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:03:35,205 - __main__ - INFO - 放量长上影线买入 for symbol: SOLUSDT
+2023-12-27 19:03:35,205 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:03:35,999 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:03:35,999 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:03:36,807 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:03:36,807 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:03:37,570 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:03:37,571 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:03:38,330 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:03:38,330 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:03:39,273 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:03:39,274 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:03:40,119 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:03:40,119 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:03:40,937 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:03:40,938 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:03:41,721 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:03:41,721 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:03:42,555 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:03:42,555 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:03:43,341 - __main__ - INFO - 放量长上影线买入 for symbol: OPUSDT
+2023-12-27 19:03:43,341 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:03:44,118 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:03:44,119 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:03:44,868 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:03:44,869 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:03:45,613 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:03:45,613 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:03:46,409 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:03:46,410 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:03:47,169 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:03:47,169 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:03:47,937 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:03:47,938 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:03:48,688 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:03:48,688 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:05:44,154 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:05:44,980 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:05:44,980 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:05:45,747 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:05:45,747 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:05:46,561 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:05:46,562 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:05:47,433 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:05:47,433 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:05:48,235 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:05:48,235 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:05:49,028 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:05:49,028 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:05:49,841 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:05:49,841 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:05:50,628 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:05:50,628 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:05:51,451 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:05:51,451 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:05:52,270 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:05:52,270 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:05:53,090 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:05:53,091 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:05:53,898 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:05:53,898 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:05:54,676 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:05:54,676 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:05:55,464 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:05:55,465 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:05:56,250 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:05:56,252 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:05:57,085 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:05:57,085 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:05:57,876 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:05:57,877 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:05:58,683 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:05:58,683 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:05:59,500 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:05:59,500 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:06:00,297 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:06:00,297 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:07:55,030 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:07:55,852 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:07:55,852 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:07:56,660 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:07:56,660 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:07:57,478 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:07:57,478 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:07:58,278 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:07:58,279 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:07:59,086 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:07:59,086 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:07:59,923 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:07:59,924 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:08:00,697 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:08:00,698 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:08:01,484 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:08:01,484 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:08:02,296 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:08:02,296 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:08:03,099 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:08:03,100 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:08:03,897 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:08:03,898 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:08:04,698 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:08:04,698 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:08:05,523 - __main__ - INFO - 放量长上影线买入 for symbol: OPUSDT
+2023-12-27 19:08:05,523 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:08:06,332 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:08:06,333 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:08:07,163 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:08:07,163 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:08:07,959 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:08:07,959 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:08:08,730 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:08:08,731 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:08:09,515 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:08:09,515 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:08:10,326 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:08:10,326 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:08:11,122 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:08:11,122 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:09:58,824 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:09:59,654 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:09:59,654 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:10:00,435 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:10:00,436 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:10:01,228 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:10:01,228 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:10:02,028 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:10:02,028 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:10:02,850 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:10:02,850 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:10:03,643 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:10:03,643 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:10:04,455 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:10:04,456 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:10:05,243 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:10:05,243 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:10:06,048 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:10:06,048 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:10:06,855 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:10:06,856 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:10:07,654 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:10:07,655 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:10:08,466 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:10:08,467 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:10:09,289 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:10:09,289 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:10:10,100 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:10:10,103 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:10:10,917 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:10:10,917 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:10:11,717 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:10:11,717 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:10:12,511 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:10:12,511 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:10:13,307 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:10:13,307 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:10:14,156 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:10:14,156 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:10:14,955 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:10:14,955 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:11:40,387 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:11:41,398 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:11:41,398 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:11:42,353 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:11:42,353 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:11:43,103 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:11:43,104 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:11:43,858 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:11:43,858 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:11:44,625 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:11:44,626 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:11:45,384 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:11:45,384 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:11:46,130 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:11:46,130 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:11:46,876 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:11:46,876 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:11:47,617 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:11:47,617 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:11:48,371 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:11:48,371 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:11:49,134 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:11:49,134 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:11:49,924 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:11:49,924 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:11:50,676 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:11:50,676 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:11:51,442 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:11:51,442 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:11:52,214 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:11:52,215 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:11:52,974 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:11:52,974 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:11:53,730 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:11:53,730 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:11:54,475 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:11:54,475 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:11:55,228 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:11:55,228 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:11:56,003 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:11:56,003 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:13:48,333 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:13:49,126 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:13:49,127 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:13:49,886 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:13:49,886 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:13:50,647 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:13:50,647 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:13:51,412 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:13:51,413 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:13:52,170 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:13:52,170 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:13:52,925 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:13:52,926 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:13:53,680 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:13:53,681 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:13:54,433 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:13:54,434 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:13:55,187 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:13:55,187 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:13:55,942 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:13:55,943 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:13:56,727 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:13:56,727 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:13:57,484 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:13:57,484 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:13:58,238 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:13:58,238 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:13:58,982 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:13:58,982 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:13:59,746 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:13:59,746 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:14:00,544 - __main__ - INFO - 放量长下影线卖出 for symbol: MINAUSDT
+2023-12-27 19:14:00,545 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:14:01,309 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:14:01,309 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:14:02,063 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:14:02,063 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:14:02,834 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:14:02,835 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:14:03,602 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:14:03,602 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:15:10,256 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:15:11,034 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:15:11,034 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:15:11,782 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:15:11,782 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:15:12,539 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:15:12,539 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:15:13,299 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:15:13,300 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:15:14,078 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:15:14,078 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:15:14,864 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:15:14,864 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:15:15,645 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:15:15,645 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:15:16,427 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:15:16,427 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:15:17,177 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:15:17,177 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:15:17,943 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:15:17,943 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:15:18,721 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:15:18,721 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:15:19,516 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:15:19,516 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:15:20,279 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:15:20,280 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:15:21,034 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:15:21,034 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:15:21,810 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:15:21,811 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:15:22,598 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:15:22,598 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:15:23,352 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:15:23,352 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:15:24,138 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:15:24,138 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:15:24,920 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:15:24,920 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:15:25,686 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:15:25,686 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:16:47,025 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:16:47,808 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:16:47,808 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:16:48,587 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:16:48,587 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:16:49,353 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:16:49,353 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:16:50,101 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:16:50,101 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:16:50,860 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:16:50,860 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:16:51,611 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:16:51,611 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:16:52,394 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:16:52,394 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:16:53,151 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:16:53,152 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:16:53,912 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:16:53,912 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:16:54,684 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:16:54,685 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:16:55,432 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:16:55,432 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:16:56,189 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:16:56,189 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:16:56,941 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:16:56,941 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:16:57,709 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:16:57,709 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:16:58,460 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:16:58,461 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:16:59,231 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:16:59,231 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:16:59,981 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:16:59,982 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:17:00,726 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:17:00,727 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:17:01,484 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:17:01,484 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:17:02,251 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:17:02,251 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:18:28,368 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:18:29,154 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:18:29,155 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:18:29,953 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:18:29,953 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:18:30,709 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:18:30,709 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:18:31,471 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:18:31,471 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:18:32,224 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:18:32,224 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:18:32,981 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:18:32,982 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:18:33,744 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:18:33,744 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:18:34,507 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:18:34,507 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:18:35,279 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:18:35,279 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:18:36,050 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:18:36,050 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:18:36,804 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:18:36,804 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:18:37,585 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:18:37,585 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:18:38,343 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:18:38,343 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:18:39,090 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:18:39,090 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:18:39,879 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:18:39,879 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:18:40,629 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:18:40,629 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:18:41,716 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:18:41,717 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:18:42,470 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:18:42,470 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:18:43,222 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:18:43,222 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:18:43,999 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:18:43,999 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:20:28,076 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:20:28,869 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:20:28,869 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:20:29,628 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:20:29,628 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:20:30,395 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:20:30,395 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:20:31,164 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:20:31,164 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:20:31,922 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:20:31,922 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:20:32,673 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:20:32,673 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:20:33,440 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:20:33,441 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:20:34,277 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:20:34,278 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:20:35,027 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:20:35,027 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:20:35,777 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:20:35,777 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:20:36,538 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:20:36,538 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:20:37,288 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:20:37,289 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:20:38,061 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:20:38,061 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:20:38,845 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:20:38,845 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:20:39,592 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:20:39,593 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:20:40,350 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:20:40,351 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:20:41,097 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:20:41,097 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:20:41,855 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:20:41,856 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:20:42,603 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:20:42,603 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:20:43,370 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:20:43,370 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:22:22,125 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:22:22,914 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:22:22,914 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:22:23,710 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:22:23,710 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:22:24,467 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:22:24,467 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:22:25,204 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:22:25,204 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:22:25,950 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:22:25,950 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:22:26,694 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:22:26,694 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:22:27,431 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:22:27,432 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:22:28,210 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:22:28,210 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:22:28,956 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:22:28,956 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:22:29,689 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:22:29,689 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:22:30,414 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:22:30,414 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:22:31,161 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:22:31,161 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:22:31,886 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:22:31,887 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:22:32,644 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:22:32,644 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:22:33,401 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:22:33,401 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:22:34,147 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:22:34,148 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:22:34,901 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:22:34,901 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:22:35,642 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:22:35,642 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:22:36,413 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:22:36,413 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:22:37,175 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:22:37,175 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:24:04,176 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:24:05,002 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:24:05,002 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:24:05,748 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:24:05,748 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:24:06,498 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:24:06,498 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:24:07,257 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:24:07,258 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:24:08,019 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:24:08,019 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:24:08,770 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:24:08,770 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:24:09,520 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:24:09,520 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:24:10,271 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:24:10,271 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:24:11,027 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:24:11,027 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:24:11,771 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:24:11,771 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:24:12,506 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:24:12,506 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:24:13,241 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:24:13,241 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:24:13,988 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:24:13,988 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:24:14,746 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:24:14,746 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:24:15,490 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:24:15,490 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:24:16,250 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:24:16,250 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:24:16,982 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:24:16,982 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:24:17,747 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:24:17,747 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:24:18,489 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:24:18,489 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:24:19,205 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:24:19,205 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:25:47,516 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:25:48,355 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:25:48,355 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:25:49,152 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:25:49,152 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:25:49,936 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:25:49,936 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:25:50,724 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:25:50,725 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:25:51,512 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:25:51,512 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:25:52,294 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:25:52,294 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:25:53,097 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:25:53,098 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:25:53,909 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:25:53,910 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:25:54,703 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:25:54,704 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:25:55,502 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:25:55,502 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:25:56,303 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:25:56,303 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:25:57,101 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:25:57,101 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:25:57,884 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:25:57,884 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:25:58,686 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:25:58,686 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:25:59,504 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:25:59,505 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:26:00,313 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:26:00,314 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:26:01,120 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:26:01,120 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:26:01,911 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:26:01,911 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:26:02,715 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:26:02,715 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:26:03,542 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:26:03,542 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
+2023-12-27 19:27:46,526 - __main__ - INFO - Executing strategy for symbol: BTCUSDT
+2023-12-27 19:27:47,385 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BTCUSDT
+2023-12-27 19:27:47,385 - __main__ - INFO - Executing strategy for symbol: ETHUSDT
+2023-12-27 19:27:48,179 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ETHUSDT
+2023-12-27 19:27:48,179 - __main__ - INFO - Executing strategy for symbol: SOLUSDT
+2023-12-27 19:27:48,977 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SOLUSDT
+2023-12-27 19:27:48,977 - __main__ - INFO - Executing strategy for symbol: MATICUSDT
+2023-12-27 19:27:49,788 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MATICUSDT
+2023-12-27 19:27:49,788 - __main__ - INFO - Executing strategy for symbol: ORDIUSDT
+2023-12-27 19:27:50,567 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ORDIUSDT
+2023-12-27 19:27:50,568 - __main__ - INFO - Executing strategy for symbol: BNBUSDT
+2023-12-27 19:27:51,345 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BNBUSDT
+2023-12-27 19:27:51,345 - __main__ - INFO - Executing strategy for symbol: BAKEUSDT
+2023-12-27 19:27:52,131 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: BAKEUSDT
+2023-12-27 19:27:52,131 - __main__ - INFO - Executing strategy for symbol: SEIUSDT
+2023-12-27 19:27:52,909 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SEIUSDT
+2023-12-27 19:27:52,910 - __main__ - INFO - Executing strategy for symbol: XRPUSDT
+2023-12-27 19:27:53,686 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: XRPUSDT
+2023-12-27 19:27:53,686 - __main__ - INFO - Executing strategy for symbol: AVAXUSDT
+2023-12-27 19:27:54,441 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: AVAXUSDT
+2023-12-27 19:27:54,441 - __main__ - INFO - Executing strategy for symbol: PERPUSDT
+2023-12-27 19:27:55,209 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: PERPUSDT
+2023-12-27 19:27:55,210 - __main__ - INFO - Executing strategy for symbol: LEVERUSDT
+2023-12-27 19:27:55,957 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: LEVERUSDT
+2023-12-27 19:27:55,957 - __main__ - INFO - Executing strategy for symbol: OPUSDT
+2023-12-27 19:27:56,735 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: OPUSDT
+2023-12-27 19:27:56,735 - __main__ - INFO - Executing strategy for symbol: ADAUSDT
+2023-12-27 19:27:57,526 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: ADAUSDT
+2023-12-27 19:27:57,526 - __main__ - INFO - Executing strategy for symbol: NEARUSDT
+2023-12-27 19:27:58,339 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: NEARUSDT
+2023-12-27 19:27:58,340 - __main__ - INFO - Executing strategy for symbol: MINAUSDT
+2023-12-27 19:27:59,105 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: MINAUSDT
+2023-12-27 19:27:59,105 - __main__ - INFO - Executing strategy for symbol: SUIUSDT
+2023-12-27 19:27:59,887 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: SUIUSDT
+2023-12-27 19:27:59,887 - __main__ - INFO - Executing strategy for symbol: 1000SATSUSDT
+2023-12-27 19:28:00,651 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: 1000SATSUSDT
+2023-12-27 19:28:00,651 - __main__ - INFO - Executing strategy for symbol: DOGEUSDT
+2023-12-27 19:28:01,418 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DOGEUSDT
+2023-12-27 19:28:01,418 - __main__ - INFO - Executing strategy for symbol: DYDXUSDT
+2023-12-27 19:28:02,153 - __main__ - INFO - 不满足做多做空条件，继续等待 for symbol: DYDXUSDT
+2023-12-27 19:28:02,153 - __main__ - INFO - 扫描完一次20个币对，随机休眠一段时间后继续扫描
