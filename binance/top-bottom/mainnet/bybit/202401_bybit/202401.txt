@@ -1,0 +1,22 @@
+如果你想在其他文件中调用该类，可以使用以下方式：
+
+from your_module import KLineChart
+
+# 示例数据，替换成你的K线数据
+sample_kline_data = [
+    # ... Your Kline Data ...
+]
+
+# 创建KLineChart对象
+kline_chart = KLineChart(sample_kline_data)
+
+# 生成K线图
+kline_chart.generate_chart()
+
+
+test1.py
+先测试上线影线逻辑
+
+
+test2.py
+测试成交量放量逻辑

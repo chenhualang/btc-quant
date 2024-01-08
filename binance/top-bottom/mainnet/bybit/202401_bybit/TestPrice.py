@@ -1,9 +1,9 @@
 import time
 import random
 from pybit.unified_trading import HTTP
-from notice.email1 import EmailSender
+from email1 import EmailSender
 import logging
-import datetime
+from kline import KLineChart
 
 session = HTTP(
     testnet=False,
@@ -26,6 +26,7 @@ file_handler.setFormatter(formatter)
 # 将文件处理器添加到日志记录器中
 logger.addHandler(file_handler)
 
+# logger = logging.getLogger(__name__)
 # logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
 # logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
 
@@ -75,10 +76,19 @@ def send_email_notification(action, symbol):
 
 def process_symbols(symbols):
     for symbol in symbols:
+        symbol = "TRBUSDT"
         try:
             logger.info(f"Executing strategy for symbol: {symbol}")
             # 获取最新K线数据
             kline_data = session.get_kline(category="linear", symbol=symbol, interval=5)["result"]["list"]
+
+            # # 创建KLineChart对象
+            # kline_chart = KLineChart(kline_data)
+            #
+            # # 生成K线图
+            # kline_chart.generate_chart()
+            # kline_chart.save_chart()
+
             if len(kline_data) > 0:
                 latest_kline = kline_data[0]
                 open_price = float(latest_kline[1])
@@ -87,14 +97,14 @@ def process_symbols(symbols):
                 volume = float(latest_kline[5])
                 close = float(latest_kline[4])
 
-                spike_flag = is_volume_spike(symbol)
+                # spike_flag = is_volume_spike(symbol)
 
                 # 判断条件并执行交易
-                if spike_flag and close > open_price and (open_price - low) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长下影线买入 for symbol: {symbol}")
+                if close > open_price and (open_price - low) >= (2 * abs(close - open_price)):
+                    logger.info(f"放量长下影线买入 for symbol: {symbol}, K线数据: {latest_kline}")
                     # 执行买入逻辑，可以调用相关函数   放量长上影线且阴线放量，做空卖出
-                elif spike_flag and close < open_price and (high - open_price) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长上影线卖出 for symbol: {symbol}")
+                elif close < open_price and (high - open_price) >= (2 * abs(close - open_price)):
+                    logger.info(f"放量长上影线卖出 for symbol: {symbol}, K线数据: {latest_kline}")
                     # 执行卖出逻辑，可以调用相关函数
                 else:
                     logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")

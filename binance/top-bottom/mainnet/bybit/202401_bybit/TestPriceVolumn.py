@@ -1,9 +1,8 @@
 import time
 import random
 from pybit.unified_trading import HTTP
-from notice.email1 import EmailSender
+from email1 import EmailSender
 import logging
-import datetime
 
 session = HTTP(
     testnet=False,
@@ -26,6 +25,7 @@ file_handler.setFormatter(formatter)
 # 将文件处理器添加到日志记录器中
 logger.addHandler(file_handler)
 
+# logger = logging.getLogger(__name__)
 # logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
 # logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
 
@@ -40,10 +40,10 @@ def is_volume_spike(symbol):
         # 获取最新一次15分钟的K线数据
         current_kline = session.get_kline(symbol=symbol, interval=5, limit=1)["result"]["list"][0]
         current_volume = float(current_kline[5])
-        logger.info(f"Current Volume: {current_volume}, Average Volume: {average_volume}")
+        logger.info(f"币种: {symbol}, 最新成交量: {current_volume}, 最近6小时平均成交量: {average_volume}, 时间戳: {current_kline[0]}")
         # 判断是否放量
         if current_volume >= 2 * average_volume:
-            logger.info('满足放量条件，最近一次成交量是平均成交量的2倍以上')
+            logger.info(f"满足放量条件，最近一次成交量是平均成交量的2倍以上, 币种: {symbol}, 最新成交量: {current_volume}, 最近6小时平均成交量: {average_volume}, 时间戳: {current_kline[0]}")
             return True
 
     return False
@@ -56,7 +56,7 @@ def get_top_20_volume_symbols():
     return top_symbols
 
 
-def send_email_notification(action, symbol):
+def send_email_notification(action, symbol, klineData):
     # 你的邮箱地址和授权密码
     sender_email = "chenhualang_1988@sina.com"
     sender_password = "b1f3558e5244792f"
@@ -66,8 +66,8 @@ def send_email_notification(action, symbol):
     # 接收邮件的邮箱地址
     receiver_email = "charliechen1207@gmail.com"
     # 邮件主题和内容
-    subject = f"{action} for symbol: {symbol}"
-    body = f"{action} for symbol: {symbol}"
+    subject = f"{action} for symbol: {symbol}, K线数据: {klineData}"
+    body = f"{action} for symbol: {symbol}, K线数据: {klineData}"
     # 创建 EmailSender 实例
     email_sender = EmailSender(sender_email, sender_password, smtp_server, smtp_port)
     # 发送邮件
@@ -91,11 +91,13 @@ def process_symbols(symbols):
 
                 # 判断条件并执行交易
                 if spike_flag and close > open_price and (open_price - low) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长下影线买入 for symbol: {symbol}")
-                    # 执行买入逻辑，可以调用相关函数   放量长上影线且阴线放量，做空卖出
+                    logger.info(f"放量长下影线买入 for symbol: {symbol}, K线数据: {latest_kline}")
+                    send_email_notification("放量长下影线买入", symbol, latest_kline)
+                    # 执行买入逻辑，可以调用相关函数   放量长下影线且阳线放量，做多买入
                 elif spike_flag and close < open_price and (high - open_price) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长上影线卖出 for symbol: {symbol}")
-                    # 执行卖出逻辑，可以调用相关函数
+                    logger.info(f"放量长上影线卖出 for symbol: {symbol}, K线数据: {latest_kline}")
+                    send_email_notification("放量长上影线卖出", symbol, latest_kline)
+                    # 执行卖出逻辑，可以调用相关函数     放量长上影线且阴线放量，做空卖出
                 else:
                     logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
         except Exception as e:
