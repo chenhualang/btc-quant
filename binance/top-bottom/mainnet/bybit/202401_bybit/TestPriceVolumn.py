@@ -3,11 +3,12 @@ import random
 from pybit.unified_trading import HTTP
 from email1 import EmailSender
 import logging
+import datetime
 
 session = HTTP(
     testnet=False,
-    api_key="GeS2xzvYScxnIjWEOU",
-    api_secret="2JDubktuzxTvzkqE0AozIRcL5SByUrotzcCx",
+    api_key="N93MO3wRs0PCYH65yI",
+    api_secret="igRi3Mq3ticqvBr9cdRgjCMNiEmldbiIdhqD",
 )
 
 # 配置日志记录器
@@ -18,12 +19,18 @@ logger.setLevel(logging.INFO)
 file_handler = logging.FileHandler('bybit_quant_mainnet.log')
 file_handler.setLevel(logging.INFO)
 
+# 创建一个文件处理器，将error日志写入文件
+file_handler_error = logging.FileHandler('bybit_quant_mainnet_error.log')
+file_handler_error.setLevel(logging.ERROR)
+
 # 创建一个日志格式器，设置日志的输出格式
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 file_handler.setFormatter(formatter)
+file_handler_error.setFormatter(formatter)
 
 # 将文件处理器添加到日志记录器中
 logger.addHandler(file_handler)
+logger.addHandler(file_handler_error)
 
 # logger = logging.getLogger(__name__)
 # logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
@@ -43,7 +50,7 @@ def is_volume_spike(symbol):
         logger.info(f"币种: {symbol}, 最新成交量: {current_volume}, 最近6小时平均成交量: {average_volume}, 时间戳: {current_kline[0]}")
         # 判断是否放量
         if current_volume >= 2 * average_volume:
-            logger.info(f"满足放量条件，最近一次成交量是平均成交量的2倍以上, 币种: {symbol}, 最新成交量: {current_volume}, 最近6小时平均成交量: {average_volume}, 时间戳: {current_kline[0]}")
+            logger.info(f"满足放量条件，最近一次成交量是平均成交量的2倍以上, 币种: {symbol}, 时间: {convert_time(int(current_kline[0]))},最新成交量: {current_volume}, 最近6小时平均成交量: {average_volume}, 时间戳: {current_kline[0]}")
             return True
 
     return False
@@ -66,8 +73,8 @@ def send_email_notification(action, symbol, klineData):
     # 接收邮件的邮箱地址
     receiver_email = "charliechen1207@gmail.com"
     # 邮件主题和内容
-    subject = f"{action} for symbol: {symbol}, K线数据: {klineData}"
-    body = f"{action} for symbol: {symbol}, K线数据: {klineData}"
+    subject = f"{action}币种 : {symbol}, 时间: {convert_time(int(klineData[0]))}"
+    body = f"{action}币种 : {symbol}, K线数据: {klineData}"
     # 创建 EmailSender 实例
     email_sender = EmailSender(sender_email, sender_password, smtp_server, smtp_port)
     # 发送邮件
@@ -91,19 +98,29 @@ def process_symbols(symbols):
 
                 # 判断条件并执行交易
                 if spike_flag and close > open_price and (open_price - low) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长下影线买入 for symbol: {symbol}, K线数据: {latest_kline}")
+                    logger.info(f"放量长下影线买入币对: {symbol}, 时间: {convert_time(int(latest_kline[0]))}, K线数据: {latest_kline}")
                     send_email_notification("放量长下影线买入", symbol, latest_kline)
                     # 执行买入逻辑，可以调用相关函数   放量长下影线且阳线放量，做多买入
                 elif spike_flag and close < open_price and (high - open_price) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长上影线卖出 for symbol: {symbol}, K线数据: {latest_kline}")
+                    logger.info(f"放量长上影线卖出币对: {symbol}, 时间: {convert_time(int(latest_kline[0]))}, K线数据: {latest_kline}")
                     send_email_notification("放量长上影线卖出", symbol, latest_kline)
                     # 执行卖出逻辑，可以调用相关函数     放量长上影线且阴线放量，做空卖出
                 else:
                     logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
         except Exception as e:
-            logger.info(f"Error occurred for symbol: {symbol}")
-            logger.info(f"Error message: {str(e)}")
+            logger.error(f"Error occurred for symbol: {symbol}")
+            logger.error(f"Error message: {str(e)}")
 
+def convert_time(timestamp):
+    # timestamp = 1673349000000
+    # 根据毫秒时间戳创建datetime对象
+    dt = datetime.datetime.fromtimestamp(timestamp / 1000)
+
+    # 格式化datetime对象为指定格式
+    formatted_datetime = dt.strftime('%Y-%m-%d %H:%M:%S')
+
+    print(formatted_datetime)
+    return dt
 
 def main():
     # 获取24h成交量最高的20个币

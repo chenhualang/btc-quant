@@ -20,3 +20,26 @@ test1.py
 
 test2.py
 测试成交量放量逻辑
+
+get_position
+当前持仓为: {'retCode': 0, 'retMsg': 'OK', 'result': {'list': [{'positionIdx': 0, 'riskId': 1, 'riskLimitValue': '200000', 'symbol': 'SEIUSDT', 'side': 'Buy', 'size': '50', 'avgPrice': '0.73829', 'positionValue': '36.9145', 'tradeMode': 1, 'positionStatus': 'Normal', 'autoAddMargin': 0, 'adlRankIndicator': 2, 'leverage': '5', 'positionBalance': '7.39914238', 'markPrice': '0.64814', 'liqPrice': '0.59802', 'bustPrice': '0.59064', 'positionMM': '0.29532', 'positionIM': '0.73829', 'tpslMode': 'Full', 'takeProfit': '0.00000', 'stopLoss': '0.00000', 'trailingStop': '0.00000', 'unrealisedPnl': '-4.5075', 'cumRealisedPnl': '-1243.44341557', 'seq': 80266675217, 'isReduceOnly': False, 'mmrSysUpdateTime': '', 'leverageSysUpdatedTime': '', 'createdTime': '1692181477889', 'updatedTime': '1704877152030'}], 'nextPageCursor': '', 'category': 'linear'}, 'retExtInfo': {}, 'time': 1704900156471}
+获取字典中result list 的第一个元素的avgPrice字段
+
+
+INFO:__main__:账户余额为: {'accountType': 'CONTRACT', 'accountIMRate': '', 'accountMMRate': '', 'totalEquity': '', 'totalWalletBalance': '', 'totalMarginBalance': '', 'totalAvailableBalance': '', 'totalPerpUPL': '', 'totalInitialMargin': '', 'totalMaintenanceMargin': '', 'accountLTV': '', 'coin': [{'coin': 'USDT', 'equity': '191.85356166', 'usdValue': '', 'walletBalance': '191.85356166', 'borrowAmount': '', 'availableToBorrow': '', 'availableToWithdraw': '191.85356166', 'accruedInterest': '', 'totalOrderIM': '0', 'totalPositionIM': '0', 'totalPositionMM': '', 'unrealisedPnl': '0', 'cumRealisedPnl': '-94024.00883834'}]}
+INFO:__main__:账户余额为: 191.85356166
+INFO:__main__:当前最新成交价为: 46786.1
+INFO:__main__:下单结果: {'retCode': 0, 'retMsg': 'OK', 'result': {'orderId': '4e179fcb-d35b-4fe3-97a0-90bf5e4b86ed', 'orderLinkId': ''}, 'retExtInfo': {}, 'time': 1704784349475}
+
+python 日志加上代码位置行数
+配置是否可能支持热更新，比如python 接入nacos 配置
+
+bybit v5 下单函数如何区分合约杠杆倍数的
+成交结果是否区分全部成交，成交一部分，未成交
+
+还有一点，监控币价有个边缘场景，比如现在17:00-17:05之间，可能在前面两分钟出现了放量长上影线技术形态，但是后面两分钟涨上去了，变成阳线了，但是监控到了发邮件通知了
+这种要如何处理，需要思考下，能否监控上一个interval的k线?
+
+
+def take_profit_loss(profit_threshold, stop_loss_threshold):
+
