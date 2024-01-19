@@ -43,3 +43,78 @@ bybit v5 下单函数如何区分合约杠杆倍数的
 
 def take_profit_loss(profit_threshold, stop_loss_threshold):
 
+
+开始多线程监控所有持仓币种
+INFO:__main__:合约持仓信息: {'symbol': 'XRPUSDT', 'size': '564', 'side': 'Sell', 'avgPrice': '0.5672', 'markPrice': '0.5683', 'positionValue': '319.9008', 'leverage': '7'}
+INFO:__main__:合约币种: XRPUSDT止盈价格: 0.5643640000000001, 止损价格: 0.570036
+INFO:__main__:合约持仓信息: {'symbol': 'SEIUSDT', 'size': '373', 'side': 'Buy', 'avgPrice': '0.65935', 'markPrice': '0.65745', 'positionValue': '245.93755', 'leverage': '5'}
+INFO:__main__:合约币种: SEIUSDT止盈价格: 0.66264675, 止损价格: 0.65605325
+发现SEIUSDT 当前价格: 0.65427，已经达到止损价格，但是没有止损平仓，没有看到  多仓止损卖出，币种 的日志输出
+
+
+本地停止run 运行报错如下：
+Traceback (most recent call last):
+  File "/Users/hk00068ml/Documents/projects/python/quant/btc-quant/binance/top-bottom/mainnet/bybit/202401_bybit/TestAutoBuySell.py", line 351, in <module>
+    monitor_positions(positions)
+  File "/Users/hk00068ml/Documents/projects/python/quant/btc-quant/binance/top-bottom/mainnet/bybit/202401_bybit/TestAutoBuySell.py", line 285, in monitor_positions
+    thread.join()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 1053, in join
+    self._wait_for_tstate_lock()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/threading.py", line 1069, in _wait_for_tstate_lock
+    elif lock.acquire(block, timeout):
+KeyboardInterrupt
+
+
+place_order
+成功买入结果返回
+INFO:__main__:下单结果: {'retCode': 0, 'retMsg': 'OK', 'result': {'orderId': '02d3f339-7053-4367-a6a3-bf6b02b976d4', 'orderLinkId': ''}, 'retExtInfo': {}, 'time': 1704966912186}
+INFO:__main__:下单买入结果: {'retCode': 0, 'retMsg': 'OK', 'result': {'orderId': '02d3f339-7053-4367-a6a3-bf6b02b976d4', 'orderLinkId': ''}, 'retExtInfo': {}, 'time': 1704966912186}
+
+不成功返回：
+INFO:__main__:下单买入结果: {'retCode': 0, 'retMsg': 'OK', 'result': {'orderId': '4f6ef227-4f2d-4c46-906c-2d468bc539b4', 'orderLinkId': ''}, 'retExtInfo': {}, 'time': 1704967014399}
+
+
+
+查詢實時委託單
+https://bybit-exchange.github.io/docs/zh-TW/v5/order/open-order
+
+
+ get_position()   session.get_positions    获取当前持仓信息
+ get_order_status   session.get_open_orders  获取当前委托单信息
+
+
+
+ERROR:__main__:当前挂单数量为: 2, 请改为手动成交或取消，时间: 2024-01-12 21:03:50
+INFO:__main__:订单: 40bf26f3-f089-4ae6-9ebd-8fdd929cfc2e 已成交，币种: SUIUSDT, 成交数量: 20, 方向: Buy，成交时间: 2024-01-12 21:03:54
+
+ # 执行卖出逻辑，可以调用相关函数     放量长上影线且阴线放量，做空卖出
+                    side = "Sell"
+                    buy_in_multiple_parts(symbol, side, market_price, account_balance)
+ def buy_in_multiple_parts(symbol, side, market_price, total_balance):
+    global coin_num  # 声明coin_num为全局变量
+    remaining_balance = total_balance
+    这里目前有问题，每次调用后剩余总余额都是初始值，不是减去上次买入的余额
+
+
+
+使用其他技术指标或机器学习算法进行更准确的判断：
+这需要更为复杂的处理，可能包括使用技术指标或机器学习模型来预测市场走势。这超出了简单回答的范围，需要对历史数据进行详细分析、特征工程、模型训练和评估。
+
+如果你有兴趣探索这一方向，可以考虑使用流行的Python库，如scikit-learn进行机器学习或ta-lib进行技术分析。
+
+如何调整下单合约时的合约倍数，5倍还是10倍
+止盈止损比例如何调整，目前是0.5% 0.5%
+
+本地运行测试时，记得改logger 方式，使用本地方式，目前本地方式日志没有加日期时间
+
+记得部署服务器时需要修改logger
+
+
+WARNING:urllib3.connectionpool:Connection pool is full, discarding connection: api.bybit.com
+WARNING:urllib3.connectionpool:Connection pool is full, discarding connection: api.bybit.com
+
+ raise SMTPDataError(code, repl)
+smtplib.SMTPDataError: (550, b'too many message send today.')
+python 发邮件报错如上，是什么问题，如何解决
+这个问题是由于发送的邮件数量超过了SMTP服务器的限制而导致的。邮件服务器通常会限制每天发送的邮件数量，以防止滥发垃圾邮件。
+

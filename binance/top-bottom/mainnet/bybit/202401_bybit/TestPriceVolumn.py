@@ -4,6 +4,7 @@ from pybit.unified_trading import HTTP
 from email1 import EmailSender
 import logging
 import datetime
+import concurrent.futures
 
 session = HTTP(
     testnet=False,
@@ -80,36 +81,35 @@ def send_email_notification(action, symbol, klineData):
     # 发送邮件
     email_sender.send_email(receiver_email, subject, body)
 
-def process_symbols(symbols):
-    for symbol in symbols:
-        try:
-            logger.info(f"Executing strategy for symbol: {symbol}")
-            # 获取最新K线数据
-            kline_data = session.get_kline(category="linear", symbol=symbol, interval=5)["result"]["list"]
-            if len(kline_data) > 0:
-                latest_kline = kline_data[0]
-                open_price = float(latest_kline[1])
-                high = float(latest_kline[2])
-                low = float(latest_kline[3])
-                volume = float(latest_kline[5])
-                close = float(latest_kline[4])
+def process_symbol(symbol):
+    try:
+        logger.info(f"Executing strategy for symbol: {symbol}")
+        # 获取最新K线数据
+        kline_data = session.get_kline(category="linear", symbol=symbol, interval=5)["result"]["list"]
+        if len(kline_data) > 0:
+            latest_kline = kline_data[0]
+            open_price = float(latest_kline[1])
+            high = float(latest_kline[2])
+            low = float(latest_kline[3])
+            volume = float(latest_kline[5])
+            close = float(latest_kline[4])
 
-                spike_flag = is_volume_spike(symbol)
+            spike_flag = is_volume_spike(symbol)
 
-                # 判断条件并执行交易
-                if spike_flag and close > open_price and (open_price - low) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长下影线买入币对: {symbol}, 时间: {convert_time(int(latest_kline[0]))}, K线数据: {latest_kline}")
-                    send_email_notification("放量长下影线买入", symbol, latest_kline)
-                    # 执行买入逻辑，可以调用相关函数   放量长下影线且阳线放量，做多买入
-                elif spike_flag and close < open_price and (high - open_price) >= (2 * abs(close - open_price)):
-                    logger.info(f"放量长上影线卖出币对: {symbol}, 时间: {convert_time(int(latest_kline[0]))}, K线数据: {latest_kline}")
-                    send_email_notification("放量长上影线卖出", symbol, latest_kline)
-                    # 执行卖出逻辑，可以调用相关函数     放量长上影线且阴线放量，做空卖出
-                else:
-                    logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
-        except Exception as e:
-            logger.error(f"Error occurred for symbol: {symbol}")
-            logger.error(f"Error message: {str(e)}")
+            # 判断条件并执行交易
+            if spike_flag and close > open_price and (open_price - low) >= (2 * abs(close - open_price)):
+                logger.info(f"放量长下影线买入币对: {symbol}, 时间: {convert_time(int(latest_kline[0]))}, K线数据: {latest_kline}")
+                send_email_notification("放量长下影线买入", symbol, latest_kline)
+                # 执行买入逻辑，可以调用相关函数   放量长下影线且阳线放量，做多买入
+            elif spike_flag and close < open_price and (high - open_price) >= (2 * abs(close - open_price)):
+                logger.info(f"放量长上影线卖出币对: {symbol}, 时间: {convert_time(int(latest_kline[0]))}, K线数据: {latest_kline}")
+                send_email_notification("放量长上影线卖出", symbol, latest_kline)
+                # 执行卖出逻辑，可以调用相关函数     放量长上影线且阴线放量，做空卖出
+            else:
+                logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
+    except Exception as e:
+        logger.error(f"Error occurred for symbol: {symbol}")
+        logger.error(f"Error message: {str(e)}")
 
 def convert_time(timestamp):
     # timestamp = 1673349000000
@@ -130,8 +130,18 @@ def main():
 
     while True:
         # 执行监控任务
-        process_symbols(symbols)
-        logger.info('扫描完一次20个币对，随机休眠一段时间后继续扫描')
+        # process_symbols(symbols)
+
+        start_time = time.time()
+        # 使用ThreadPoolExecutor进行并行处理
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            executor.map(process_symbol, symbols)
+
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        current_time = datetime.datetime.now()
+        formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
+        logger.info(f"时间: {formatted_time} - 扫描完一次20个币对，耗时: {elapsed_time}秒，随机休眠一段时间后继续扫描")
         # 休眠一段时间，避免频繁请求
         time.sleep(random.uniform(60, 120))  # 随机休眠60-120秒
 
