@@ -12,29 +12,25 @@ import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
 import traceback
 
-session = HTTP(
-    testnet=False,
-    api_key="N93MO3wRs0PCYH65yI",
-    api_secret="igRi3Mq3ticqvBr9cdRgjCMNiEmldbiIdhqD",
-)
+
 
 # 配置日志记录器
-# logger = logging.getLogger(__name__)
-# logger.setLevel(logging.INFO)
-#
-# # 创建一个文件处理器，将日志写入文件
-# file_handler = logging.FileHandler('bybit_quant_mainnet.log')
-# file_handler.setLevel(logging.INFO)
-#
-# # 创建一个日志格式器，设置日志的输出格式
-# formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-# file_handler.setFormatter(formatter)
-#
-# # 将文件处理器添加到日志记录器中
-# logger.addHandler(file_handler)
-
 logger = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
+logger.setLevel(logging.INFO)
+
+# 创建一个文件处理器，将日志写入文件
+file_handler = logging.FileHandler('bybit_quant_mainnet.log')
+file_handler.setLevel(logging.INFO)
+
+# 创建一个日志格式器，设置日志的输出格式
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+
+# 将文件处理器添加到日志记录器中
+logger.addHandler(file_handler)
+
+# logger = logging.getLogger(__name__)
+# logging.basicConfig(level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别    本地运行用这个
 # logging.basicConfig(filename='bybit_quant_mainnet.log', level=logging.INFO)  # 设置日志级别为INFO，可以根据需要调整级别   服务器运行用这个
 
 
@@ -130,17 +126,17 @@ class AutoBuySell:
                 # 判断条件并执行交易
                 if spike_flag and close > open_price and (open_price - low) >= (self.top_bottom_shadow_times * abs(close - open_price)):
                     logger.info(f"放量长下影线买入 for symbol: {symbol}, K线数据: {latest_kline}")
-                    # self.send_email_notification("放量长下影线买入", symbol, latest_kline)
+                    self.send_email_notification("放量长下影线买入", symbol, latest_kline)
                     # 执行买入逻辑，可以调用相关函数   放量长下影线且阳线放量，做多买入
-                    side = "Buy"
-                    self.buy_in_multiple_parts(symbol, side, market_price, self.remaining_balance, self.coin_num)
+                    # side = "Buy"
+                    # self.buy_in_multiple_parts(symbol, side, market_price, self.remaining_balance, self.coin_num)
 
                 elif spike_flag and close < open_price and (high - open_price) >= (self.top_bottom_shadow_times * abs(close - open_price)):
                     logger.info(f"放量长上影线卖出 for symbol: {symbol}, K线数据: {latest_kline}")
-                    # self.send_email_notification("放量长上影线卖出", symbol, latest_kline)
+                    self.send_email_notification("放量长上影线卖出", symbol, latest_kline)
                     # 执行卖出逻辑，可以调用相关函数     放量长上影线且阴线放量，做空卖出
-                    side = "Sell"
-                    self.buy_in_multiple_parts(symbol, side, market_price, self.remaining_balance, self.coin_num)
+                    # side = "Sell"
+                    # self.buy_in_multiple_parts(symbol, side, market_price, self.remaining_balance, self.coin_num)
                 else:
                     logger.info(f"不满足做多做空条件，继续等待 for symbol: {symbol}")
         except Exception as e:
@@ -458,7 +454,7 @@ if __name__ == '__main__':
     stop_loss_threshold = 0.02  # 止损2%
 
     interval = 5  # 间隔时间，5分钟K线级别，还是15 分钟K线级别
-    latest_hour = 6 # 最近几个小时的K线数据
+    latest_hour = 1 # 最近几个小时的K线数据
 
     volumn_spike_times = 2  # 成交量放量几倍
     top_bottom_shadow_times = 2  # 上线影线是实体长度的几倍
@@ -512,7 +508,7 @@ if __name__ == '__main__':
     # 开启自动买卖定时任务，在每个5分钟的最后30秒执行任务   4分30秒、9分30秒、14分30秒、...、59分30秒执行任务
     auto_buy_sell.start_scheduler()
     # 定时任务扫描未成交订单状态，如发现有很多未成交订单，邮件通知一次；如有订单成交，邮件通知一次  每隔30秒执行一次
-    auto_buy_sell.run_scheduler()
+    # auto_buy_sell.run_scheduler()
     # 调用函数开始监控持仓，进行止盈止损逻辑  每隔3秒执行一次
-    positions = auto_buy_sell.get_position()
-    auto_buy_sell.monitor_positions(positions)
+    # positions = auto_buy_sell.get_position()
+    # auto_buy_sell.monitor_positions(positions)

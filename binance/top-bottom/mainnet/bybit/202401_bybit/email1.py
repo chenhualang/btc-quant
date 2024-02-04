@@ -35,7 +35,7 @@ if __name__ == "__main__":
     smtp_port = 465  # 使用 SMTP_SSL，端口改为465
 
     # 接收邮件的邮箱地址
-    receiver_email = "charliechen1207@gmail.com"
+    receiver_email = "chenhualang@126.com"
 
     # 邮件主题和内容
     subject = "Test Email"
